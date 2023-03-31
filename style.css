@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* -------------------------------------- Body -------------------------------------- */
+
+body{
+   background-color: black;
+   color: white;
+   font-family: "Poppins",sans-serif;
+}
+
+/* -------------------------------------- Body -------------------------------------- */
+
+
+/* -------------------------------------- Navbar -------------------------------------- */
+
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    z-index: 10;
+}
+
+.navbar_netflix{
+    width: 125px;
+    height: 100%;
+}
+
+.navbar__nav__items{
+    display: flex;
+    gap: 25px;
+    border: none;
+}
+
+.netflix_logo{
+    width: 100%;
+    height: 100%;
+
+}
+
+.language_drop_down{
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.dropdown__container{
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.4);
+}
+
+.signin__button{
+    border:#dc030f;
+    background-color: #dc030f;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 4px;
+    height: 35px;
+    width: 100%;
+    font-weight: bolder;
+    transition: 0.4s;
+}
+
+.signin__button:hover{
+    background-color: #C11119;
+    cursor: pointer;
+}
+
+/* -------------------------------------- Navbar -------------------------------------- */
+
+/* -------------------------------------- Main -------------------------------------- */
+
+
+.hero__bg__image__container{
+    width: 100%;
+    height: 100%;
+}
+
+.hero__bg__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero__bg__overlay{
+    position: absolute;
+    inset:0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.4) ;
+}
+
+
+.hero__card{
+    position: absolute;
+    top:30%;
+    left: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero__title{
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.hero__subtitle{
+    font-weight: 400;
+}
+
+.hero-card p{
+    font-size: 3rem;
+}
+
+.email{
+    width: 450px;
+    height: 60px;
+    color: white;
+    background-color: rgba(0,0,0,0.5) ; 
+    padding: 0.25rem 0.5rem;
+    border: 1px solid  rgb(130, 125, 125);;
+    border-radius: 4px;
+    cursor:auto;
+}
+
+.get_started{
+    font-size: large;
+    width: 200px;
+    height: 60px;
+    border-style: none;
+    border-color: #dc030f;
+    background-color: #dc030f;
+    color: white;
+    font-weight: bolder;
+    margin: 5px;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+.get_started:hover{
+    background-color: #C11119;
+    cursor: pointer;
+   
+}
+
+.get_started a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* -------------------------------------- Main -------------------------------------- */
+
+
+/* -------------------------------------- About -------------------------------------- */
+
+
+.card-1{
+    border-top: 8px solid #232323;
+    border-bottom: 8px solid #232323;
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 100px 150px;
+}
+
+.desc-1{
+    padding-left: 90px;
+}
+
+.card-1 video{
+    position: relative;
+    width: 125%;
+    height: 58%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+    padding-left: 90px;
+}
+
+.card-1 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    width: 120%;
+    padding-left: 90px;
+    /* height: 100%; */
+}
+
+.style-cards h1{
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+    font-weight: bolder;
+}
+
+.style-cards h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: lighter;
+}
+
+
+.card-2{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 50px 0 80px 100px; 
+}
+
+.desc-2{
+    padding-left: 100px;
+}
+
+
+.card-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 100px 45px 100px; 
+    border-top: 8px solid #232323;
+    border-bottom: 8px solid #232323;
+}
+
+.card-3 img{
+    width: 110%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.card-3 video{
+    position: relative;
+    top: -87px;
+    left: 125px;
+    width: 65%;
+    height: 78%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+
+
+.desc-3{
+    padding-left: 80px;
+    padding-right: 20px;
+}
+
+
+.card-4{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 100px 0 100px 100px;
+    border-bottom: 8px solid #232323; 
+}
+
+
+.desc-4{
+    padding-left: 130px;
+}
+
+/* -------------------------------------- About -------------------------------------- */
+
+
+/* -------------------------------------- FAQ -------------------------------------- */
+
+.faq{
+    margin: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* margin: auto; */
+}
+
+.faq-title{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.faq-box {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 90px;
+    margin: auto;
+    padding: 30px;
+    text-align: left;
+    border: 1px solid #323131;
+    background: #323131;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.faq-box:hover{
+    cursor: pointer;
+    background: #4E4E4E;
+}
+
+.content{
+    margin: 70px;
+    line-height: 50px;
+}
+
+.content p{
+    font-size: 1.5rem;
+}
+
+
+
+/* -------------------------------------- FAQ -------------------------------------- */
+
+
+
+/* -------------------------------------- Footer -------------------------------------- */
+
+.footer{
+    border-top: 8px solid #232323;
+}
+
+
+.footer p{
+    margin-bottom: 1.5rem;
+    padding-left: 50px;
+    margin: 100px;
+    margin-bottom: 0;
+    color: #999;
+}
+
+.footer .footer-cols{
+    margin-top: 30px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding-left: 50px;
+}
+
+.footer li{
+    line-height: 1.9;
+    font-size: 0.9rem;
+    color: #999;
+    list-style: none;
+}
+
+.dropdown__footer{
+    border: 1px solid #999;
+    padding: 0.4rem;
+    margin-left: 150px;
+    margin-top: 30px;
+    width: 120px;
+    text-align: center;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.4);
+}
+
+
+
+
+
+/* -------------------------------------- Footer -------------------------------------- */
